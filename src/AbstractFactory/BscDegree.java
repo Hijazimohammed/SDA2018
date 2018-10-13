@@ -20,5 +20,9 @@ public class BscDegree implements Degree{
     public Content getContent() {
         return new BscContent();
     }
+
+    @Override
+    public Teacher getTeacher() {
+return new BscTeacher();    }
     
 }
