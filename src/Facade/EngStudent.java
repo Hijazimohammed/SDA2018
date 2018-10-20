@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractFactory;
+package Facade;
 
 /**
  *
  * @author aashgar
  */
-public class MscContent implements Content{
+public class EngStudent implements Student{
 
     @Override
-    public void view(String content) {
-        System.out.println("Master degree course with Content: ".toUpperCase()
-                + content.toUpperCase());
-    }
+    public void view() {
+        System.out.println("I'm Engineering student, "+
+                "I am an engineer ?!?!?");
+}
 }

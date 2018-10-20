@@ -3,21 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractFactory;
+package AbstractFoactory;
 
 /**
  *
  * @author aashgar
  */
-public class MscDegree implements Degree{
+public class PhdTeacher implements Teacher{
 
     @Override
-    public Title getTitle() {
-        return new MscTitle();
+    public void view(String teacher) {
+        System.out.println("Phd degree with teacher: "+
+                           teacher);
     }
-
-    @Override
-    public Content getContent() {
-        return new MscContent();
-    }
+    
 }

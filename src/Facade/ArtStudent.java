@@ -3,14 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractFactory;
+package Facade;
 
 /**
  *
  * @author aashgar
  */
-public interface Degree {
-    public Title getTitle();
-    public Content getContent();
-    
+public class ArtStudent implements Student{
+
+    @Override
+    public void view() {
+        System.out.println("I'm Art student, "+
+                "writting peoms is funny ?!?!?");
+}
 }

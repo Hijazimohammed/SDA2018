@@ -3,17 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractFactory;
+package Facade;
 
 /**
  *
  * @author aashgar
  */
-public class BscContent implements Content{
-
-    @Override
-    public void view(String content) {
-        System.out.println("Bachelor degree course with "
-                + "Content: "+ content);
+public class FacadeApp {
+    public static void main(String[] args) {
+        StudentMaker sm = StudentMaker.getStudentMaker();
+        sm.viewIt();
+        sm.viewEng();
+        sm.viewArt();
     }
+    
 }

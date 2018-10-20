@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractFactory;
+package AbstractFoactory;
 
 /**
  *
  * @author aashgar
  */
-public class MscTitle implements Title{
+public class BscTitle implements Title{
 
     @Override
     public void view(String title) {
-        System.out.println(
-                "Master degree course with Title: ".toUpperCase() 
-                        + title.toUpperCase());
+        System.out.println("Bachelor degree with title: "+
+                            title);
     }
+    
 }

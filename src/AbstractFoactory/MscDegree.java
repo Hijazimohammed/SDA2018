@@ -3,26 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractFactory;
+package AbstractFoactory;
 
 /**
  *
  * @author aashgar
  */
-public class BscDegree implements Degree{
+public class MscDegree implements Degree{
 
     @Override
     public Title getTitle() {
-        return new BscTitle();
+        return new MscTitle();
     }
 
     @Override
     public Content getContent() {
-        return new BscContent();
+        return new MscContent();
     }
 
     @Override
     public Teacher getTeacher() {
-return new BscTeacher();    }
-    
+    return new MscTeacher();
+    }
 }

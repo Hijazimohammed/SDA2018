@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractFactory;
+package Decorator;
 
 /**
  *
  * @author aashgar
  */
-public interface Title {
-  public void view(String title);  
+public interface Program {
+    public void viewData();
+    
 }
