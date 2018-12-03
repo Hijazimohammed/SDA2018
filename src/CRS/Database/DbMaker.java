@@ -6,6 +6,7 @@
 package CRS.Database;
 
 import CRS.AppLogic.Student;
+import java.util.List;
 
 /**
  *
@@ -30,5 +31,8 @@ public class DbMaker {
    }
    public void DbMakerAddStudent(Student aStudent){
        aDbStudent.addStudent(aStudent);
+   }
+   public List<Student> getStudentsDbMaker(){
+       return aDbStudent.getStudents();
    }
 }
